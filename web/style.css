@@ -1,0 +1,107 @@
+:root {
+  color-scheme: light;
+  font-family: Pretendard, "Noto Sans KR", Arial, sans-serif;
+  color: #222;
+  background: #f3f3f3;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+.page {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 56px 0 80px;
+}
+
+header { margin-bottom: 24px; }
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #6a6a6a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+h1 { margin: 0 0 10px; font-size: 34px; }
+header > p:last-child { margin: 0; color: #666; }
+
+.notice {
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border: 1px solid #d8d8d8;
+  background: #ececec;
+  color: #555;
+  font-size: 13px;
+}
+
+.card {
+  margin-top: 16px;
+  padding: 24px;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.heading > div:first-child { display: flex; align-items: center; gap: 10px; }
+.heading span { color: #777; font-size: 12px; font-weight: 700; }
+h2 { margin: 0; font-size: 20px; }
+code { padding: 5px 8px; background: #f0f0f0; border-radius: 5px; font-size: 12px; }
+
+.profile-grid, .status-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.profile-grid div, .status-grid article {
+  padding: 16px;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+}
+
+.profile-grid small { display: block; margin-bottom: 7px; color: #777; }
+.profile-grid strong { font-size: 14px; }
+
+.flow { display: flex; align-items: center; gap: 8px; color: #555; font-size: 12px; }
+.flow b { padding: 6px 8px; border: 1px solid #ccc; border-radius: 5px; }
+.flow i { font-style: normal; }
+
+label { display: block; margin-bottom: 8px; font-size: 13px; font-weight: 700; }
+textarea { width: 100%; min-height: 96px; padding: 14px; border: 1px solid #ccc; border-radius: 8px; resize: vertical; font: inherit; line-height: 1.6; }
+button { margin-top: 12px; padding: 10px 16px; border: 0; border-radius: 7px; background: #262626; color: #fff; font-weight: 700; cursor: pointer; }
+
+.result, .resume { margin-top: 20px; padding-top: 20px; border-top: 1px solid #e2e2e2; }
+.hidden { display: none; }
+.result-head { display: flex; justify-content: space-between; margin-bottom: 12px; }
+.result-head span { padding: 4px 7px; border-radius: 4px; background: #ececec; }
+.status-grid { grid-template-columns: 1fr 1fr; }
+.status-grid h3, .questions h3 { margin: 0 0 8px; font-size: 14px; }
+.status-grid p { margin: 0; color: #555; font-size: 13px; line-height: 1.5; }
+.questions { margin-top: 14px; padding: 16px; background: #f6f6f6; }
+.questions ol { margin: 0; padding-left: 20px; color: #555; font-size: 13px; line-height: 1.8; }
+
+.muted { color: #666; font-size: 14px; }
+.resume h3 { margin: 0; font-size: 23px; }
+.resume .headline { color: #555; }
+.resume h4 { margin: 24px 0 8px; }
+.resume p { line-height: 1.7; }
+.resume em { color: #777; font-size: 12px; font-style: normal; }
+.resume aside { padding: 12px; background: #f2f2f2; color: #555; font-size: 13px; }
+
+@media (max-width: 680px) {
+  .page { padding-top: 32px; }
+  h1 { font-size: 27px; }
+  .heading { align-items: flex-start; flex-direction: column; }
+  .profile-grid, .status-grid { grid-template-columns: 1fr; }
+}
