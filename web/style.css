@@ -82,6 +82,7 @@ textarea { width: 100%; min-height: 96px; padding: 14px; border: 1px solid #ccc;
 button { margin-top: 12px; padding: 10px 16px; border: 0; border-radius: 7px; background: #262626; color: #fff; font-weight: 700; cursor: pointer; }
 
 .result, .resume { margin-top: 20px; padding-top: 20px; border-top: 1px solid #e2e2e2; }
+.result.error { color: #b3261e; border-top-color: #f3d3d0; font-size: 13px; }
 .hidden { display: none; }
 .result-head { display: flex; justify-content: space-between; margin-bottom: 12px; }
 .result-head span { padding: 4px 7px; border-radius: 4px; background: #ececec; }
